@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 400;
+}
+
+p,
+h1,
+h2,
+h3 {
+    display: inline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 12px;
+
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 0 0 36px 36px;
+}
+
+.result h3 {
+    margin: 24px;
+    color: hsl(241, 100%, 89%);
+}
+
+.result .overall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgb(67, 10, 224), hsla(256, 72%, 46%, 0));
+
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+}
+
+.result .overall h1 {
+    font-weight: 800;
+    font-size: 64px;
+}
+
+.result .overall p {
+    font-weight: 500;
+    font-size: 14px;
+    color: hsla(241, 100%, 89%, 0.479);
+}
+
+.result h2 {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 12px 0;
+}
+
+.result p:last-child {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 24px;
+    color: hsla(241, 100%, 89%, 0.685);
+}
+
+.information {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 32px;
+}
+
+.information h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 12px 0 16px 0;
+    color: hsl(224, 30%, 27%);
+}
+
+.information .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: hsla(0, 100%, 67%, 0.171);
+    padding: 16px 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+
+    font-size: 18px;
+}
+
+.information .item div {
+    display: flex;
+}
+
+.information .item .visual img {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.information .item .visual p {
+    font-weight: 800;
+    color: hsl(0, 100%, 67%);
+}
+
+.information .item .result-one p {
+    font-weight: 800;
+    color: hsl(224, 30%, 27%);
+    margin-right: 8px;
+}
+
+.information .item .result-one span {
+    font-weight: 500;
+    color: hsla(224, 30%, 27%, 0.466);
+}
+
+.information button {
+    padding: 18px 0;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
