@@ -98,12 +98,15 @@ main {
     align-items: center;
     justify-content: space-between;
 
-    background-color: hsla(0, 100%, 67%, 0.171);
     padding: 16px 12px;
     border-radius: 8px;
     margin-bottom: 16px;
 
     font-size: 18px;
+}
+
+.information .item p {
+    margin-left: 4px;
 }
 
 .information .item div {
@@ -117,7 +120,6 @@ main {
 
 .information .item .visual p {
     font-weight: 800;
-    color: hsl(0, 100%, 67%);
 }
 
 .information .item .result-one p {
@@ -139,6 +141,47 @@ main {
     font-size: 18px;
     font-weight: 600;
     margin: 20px 0;
+    cursor: pointer;
+}
+
+.information button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.Reaction {
+    background-color: hsla(0, 100%, 67%, 0.171);
+}
+
+.Reaction p {
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+}
+
+.Memory {
+    background-color: #ffc75834;
+}
+
+.Memory p {
+    color: #ffc758;
+    font-weight: 700;
+}
+
+.Verbal {
+    background-color: #17b98b3d;
+}
+
+.Verbal p {
+    color: #17b98b;
+    font-weight: 700;
+}
+
+.Visual {
+    background-color: #3f4c9e34;
+}
+
+.Visual p {
+    color: #3f4c9e;
+    font-weight: 700;
 }
 
 @media (min-width: 998px) {
@@ -147,7 +190,7 @@ main {
         align-items: center;
         justify-content: center;
         height: 100vh;
-        width: 960px;
+        max-width: 960px;
         margin: 0 auto;
     }
 
@@ -162,4 +205,3 @@ main {
         box-shadow: 36px 20px 37px -7px rgba(172, 167, 235, 0.507);
     }
 }
-
