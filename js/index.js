@@ -1,7 +1,7 @@
 const itens = document.querySelector(".itens");
 
 async function getItens() {
-    const response = await fetch("/data.json");
+    const response = await fetch("data.json");
     const data = response.json();
 
     return data;
